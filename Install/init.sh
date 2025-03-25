@@ -7,9 +7,10 @@ if [ $(id -u) -ne 0 ]; then
 fi
 
 echo "Installing Jenkins"
-# cp ./jenkins.repo /etc/yum.repos.d/jenkins.repo
 
-curl -L -o /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+cp ./jenkins.repo /etc/yum.repos.d/jenkins.repo
+
+
 
 yum upgrade -y 
 # Add required dependencies for the jenkins package

@@ -8,7 +8,9 @@ fi
 
 echo "Installing Jenkins"
 
-curl -L -o /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo    
+curl -L -o /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo 
+ rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+
 
 
 
@@ -38,4 +40,3 @@ echo -e "Installation Completed \n\t \e[32m *** Make sure to start the service**
 
 
 
-# sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key

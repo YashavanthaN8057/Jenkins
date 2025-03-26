@@ -24,7 +24,7 @@ echo -e "Installation Completed \n\t \e[32m *** Make sure to start the service**
 #from jenkins doc
 
 # sudo wget -O /etc/yum.repos.d/jenkins.repo \
-#     https://pkg.jenkins.io/redhat-stable/jenkins.repo
+#   curl  https://pkg.jenkins.io/redhat-stable/jenkins.repo
 # sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 # sudo yum upgrade
 # # Add required dependencies for the jenkins package

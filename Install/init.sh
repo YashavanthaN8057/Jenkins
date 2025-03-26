@@ -17,7 +17,7 @@ curl -L -o /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/je
 
 yum upgrade -y 
 # Add required dependencies for the jenkins package
-yum install fontconfig java-17-openjdk -y 
+
 yum install jenkins -y
 systemctl daemon-reload
 systemctl enable jenkins
